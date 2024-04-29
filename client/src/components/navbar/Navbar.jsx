@@ -3,6 +3,7 @@ import "./navbar.scss";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
 import { useNotificationStore } from "../../lib/notificationStore";
+// import ContactForm from "../../routes/contact/ContactForm";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,7 +24,7 @@ function Navbar() {
         </a>
         <a href="/">Home</a>
         <a href="/">About</a>
-        <a href="/">Contact</a>
+        {/* <a href="/ContactForm">Contact</a> */}
         <a href="/">Agents</a>
       </div>
       <div className="right">
@@ -54,7 +55,7 @@ function Navbar() {
         <div className={open ? "menu active" : "menu"}>
           <a href="/">Home</a>
           <a href="/">About</a>
-          <a href="/">Contact</a>
+          {/* <a href="/ContactForm">Contact</a> */}
           <a href="/">Agents</a>
           <a href="/">Sign in</a>
           <a href="/">Sign up</a>
